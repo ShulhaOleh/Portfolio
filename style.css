@@ -79,6 +79,10 @@ a:hover {
     object-position: center;
 }
 
+img {
+    cursor: pointer;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;
