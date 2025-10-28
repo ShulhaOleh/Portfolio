@@ -58,43 +58,53 @@ a:hover {
 .header {
     background: linear-gradient(135deg, var(--primary-color), #60a5fa);
     color: white;
-    padding: 2rem 3rem;
+    padding: 2.5rem 3rem 2.5rem calc(200px + 0.75rem);
     position: relative;
+    min-height: 220px;
 }
 
-.photo-placeholder {
+.profile-photo {
     position: absolute;
-    top: 2rem;
+    top: 50%;
     left: 3rem;
-    width: 120px;
-    height: 120px;
+    max-height: 180px;
+    max-width: 260px;
+    width: auto;
+    height: auto;
+    transform: translateY(-50%);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     border: 3px solid white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-position: center;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-left: 140px;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0;
 }
 
 .header-left {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.125rem;
 }
 
 .name {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     opacity: 0.95;
+    margin-top: 0;
 }
 
 .header-right {
