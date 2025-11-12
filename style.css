@@ -7,13 +7,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
+    --primary-color: #1aa3e8;
+    --primary-dark: #174ea6;
+    --text-primary: #202124;
+    --text-secondary: #5f6368;
     --bg-paper: #ffffff;
-    --border-color: #e2e8f0;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --border-color: #dadce0;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 html, body {
@@ -26,7 +26,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: var(--text-primary);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #99cde7 0%, #99bde7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +135,25 @@ img {
 }
 
 .icon {
-    font-size: 1rem;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.icon-mail {
+    background-image: url('resources/mail.ico');
+}
+
+.icon-location {
+    background-image: url('resources/location.ico');
+}
+
+.icon-github {
+    background-image: url('resources/github.ico');
 }
 
 .content {
@@ -197,8 +215,15 @@ img {
 }
 
 .edu-date::before {
-    content: '📅';
-    font-size: 0.9rem;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('resources/calendar.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.25rem;
+    vertical-align: middle;
 }
 
 .edu-item h3 {
@@ -218,6 +243,18 @@ img {
     font-size: 0.85rem;
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
+}
+
+.edu-location::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('resources/location.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.25rem;
+    vertical-align: middle;
 }
 
 .edu-details {
